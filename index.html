@@ -16,40 +16,37 @@
         </div> <!-- class col-md-4-->
 
 
-        <div class="col-md-4 initial-form">
-          <h2>Set up your new bank account</h2>
-          <form id="account-setup">
+        <div class="col-md-4">
+          <h2 class="form1">Set up your new bank account</h2>
+          <form id="account-setup" class="form1">
             <div class="form-group">
               <input type="text" class="form-control" id="name-input" placeholder="Your name">
             </div> <!-- class form-group -->
             <div class="form-group">
               <input type="text" class="form-control" id="initial-deposit" placeholder="Initial deposit amount">
             </div> <!-- class form-group -->
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary form1-button">Submit</button>
           </form>
-        </div> <!-- class col-md-4 initial-form -->
 
-        <div class="col-md-4 second-form">
-          <h2>Manage your account</h2>
-          <form id="manage-account">
+          <h2 class="form2">Manage your account</h2>
+          <form id="manage-account" class="form2">
             <div class="form-group">
               <input type="text" class="form-control" id="deposit-input" placeholder="Deposit amount">
             </div> <!-- class form-group -->
             <div class="form-group">
               <input type="text" class="form-control" id="withdraw-input" placeholder="Withdraw amount">
             </div> <!-- class form-group -->
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary form2-button">Submit</button>
           </form>
-        </div> <!-- class col-md-4 second-form -->
 
-
-        <div class="col-md-4 final-form">
-          <h2>Your account's balance</h2>
-          <form id="balance-form">
+          <h2 class="form3">Your account's balance</h2>
+          <ul id="account-balance">
+          </ul>
+          <form id="balance-form" class="form3">
             <div class="form-group">
-              <span class="form-control" id="account-balance"></span>
+
             </div> <!-- class form-group -->
-            <button type="submit" class="btn btn-primary">Home</button>
+            <button type="button" class="btn btn-primary form3-button">Home</button>
           </form>
         </div> <!-- class col-md-4 balance-form -->
 
