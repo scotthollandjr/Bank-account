@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to AppaBank!</h1>
+      <div class="row">
+
+        <div class="col-md-4">
+        </div> <!-- class col-md-4-->
+
+
+        <div class="col-md-4 initial-form">
+          <h2>Set up your new bank account</h2>
+          <form id="account-setup">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name-input" placeholder="Your name">
+            </div> <!-- class form-group -->
+            <div class="form-group">
+              <input type="text" class="form-control" id="initial-deposit" placeholder="Initial deposit amount">
+            </div> <!-- class form-group -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div> <!-- class col-md-4 initial-form -->
+
+        <div class="col-md-4 second-form">
+          <h2>Manage your account</h2>
+          <form id="manage-account">
+            <div class="form-group">
+              <input type="text" class="form-control" id="deposit-input" placeholder="Deposit amount">
+            </div> <!-- class form-group -->
+            <div class="form-group">
+              <input type="text" class="form-control" id="withdraw-input" placeholder="Withdraw amount">
+            </div> <!-- class form-group -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div> <!-- class col-md-4 second-form -->
+
+
+        <div class="col-md-4 final-form">
+          <h2>Your account's balance</h2>
+          <form id="balance-form">
+            <div class="form-group">
+              <span class="form-control" id="account-balance"></span>
+            </div> <!-- class form-group -->
+            <button type="submit" class="btn btn-primary">Home</button>
+          </form>
+        </div> <!-- class col-md-4 balance-form -->
+
+
+        <div class="col-md-4">
+        </div> <!-- class col-md-4-->
+
+      </div> <!-- class row -->
+    </div> <!-- class container -->
+  </body>
+</html>
