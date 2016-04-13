@@ -1,5 +1,6 @@
 // business logic
-function BankAccount(balance) {
+function BankAccount(name, balance) {
+  this.name = name;
   this.balance = balance;
 }
 
