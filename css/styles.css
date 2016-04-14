@@ -10,6 +10,7 @@ h1, h2 {
   display:none;
 }
 
-li {
-  text-decoration: none;
+ul#account-balance {
+  text-align: center;
+  list-style: none;
 }
