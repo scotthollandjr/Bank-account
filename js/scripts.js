@@ -1,5 +1,6 @@
 // business logic
-function BankAccount(balance) {
+function BankAccount(name, balance) {
+  this.name = name;
   this.balance = balance;
 }
 
@@ -17,7 +18,7 @@ $(document).ready(function() {
 
     var inputtedName = $("input#name-input").val();
     var inputtedBalance = parseInt($("input#initial-deposit").val());
-    var newAccount = new BankAccount(inputtedBalance);
+    var newAccount = new BankAccount(inputtedName, inputtedBalance);
 
     $(".form1").toggle();
     $(".form2").toggle();
@@ -32,7 +33,7 @@ $(document).ready(function() {
       newAccount.balance += newDeposit;
       newAccount.balance -= newWithdrawal;
 
-      $("ul#account-balance").append("<li>" + newAccount.balanceAmount() + "</li>");
+      $("ul#account-balance").append("<li>" + newAccount.name + "'s balance is: " + newAccount.balanceAmount() + "</li>");
 
 
       $(".form2").toggle();
